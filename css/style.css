@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+*,
+*::before,
+*::after {
+    font-family: "Roboto", sans-serif;
+}

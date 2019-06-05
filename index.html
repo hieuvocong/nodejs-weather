@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Weather</title>
+
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/places.js@1.16.4"
+        ></script>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"
+        ></script>
+        <script defer src="./js/script.js"></script>
+    </head>
+    <body>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h1 class="text-center" data-location>Location</h1>
+                    <div class="text-center mt-5">
+                        <canvas id="icon" width="100" height="100"></canvas>
+                    </div>
+                    <h3 class="text-center mt-2" data-status>Status</h3>
+
+                    <div class="row text-center mt-5">
+                        <div class="col-md-4">
+                            <h4 class="mt-2">Wind</h4>
+                            <div data-wind>...</div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="mt-2">Temperature</h4>
+                            <div data-temperature>...</div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="mt-2">Precipitation</h4>
+                            <div data-precipitation>...</div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <input
+                            data-location-input
+                            type="text"
+                            placeholder="Location"
+                        />
+                    </div>
+                    <div class="footer text-center mt-5">
+                        <a href="https://hieuvocong.github.io/" target="_blank"
+                            >hieuvocong.github.io</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="text-right my-5">
+                <a
+                    class="text-secondary"
+                    href="https://darksky.net/poweredby/"
+                    target="_blank"
+                    >Powered by Dark Sky</a
+                >
+            </div>
+        </div>
+    </body>
+</html>
